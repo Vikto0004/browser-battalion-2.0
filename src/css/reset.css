@@ -1,4 +1,14 @@
 /* Reset styles */
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #292929;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 h1,
 h2,
 h3,

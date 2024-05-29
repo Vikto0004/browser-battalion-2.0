@@ -1,0 +1,116 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 125px;
+  }
+
+  .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 164px;
+  }
+
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v21-latin-500.woff2') format('woff2');
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
+}
