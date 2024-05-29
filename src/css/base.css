@@ -12,6 +12,27 @@ html {
   margin: 0 auto;
 }
 
+.title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: #00b068;
+}
+
+.link-hover {
+  transition: color 0.4s ease;
+}
+
+.link-hover:hover {
+  color: #00b068;
+}
+
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 125px;
@@ -20,6 +41,12 @@ html {
   .container {
     padding: 0 32px;
     max-width: 768px;
+  }
+
+  .title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
   }
 }
 
