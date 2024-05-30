@@ -110,11 +110,13 @@
 	.about-summary {
 		flex: 1;
 	}
+
 	.about-subtitle {
 		font-size: 36px;
 		line-height: 1.33;
 		letter-spacing: 0.01em;
 	}
+
 	.about-content {
 		background-image: url("/img/about/about-decore-bg-tab-1x.png");
 		background-repeat: no-repeat;
@@ -139,5 +141,44 @@
 
 	.about-secondpart-sublist-item:not(:last-child) {
 		margin-bottom: 16px;
+	}
+}
+
+
+@media screen and (min-width: 1280px) {
+	.about-content {
+		background-image: url("/img/about/about-decore-bg-1x.png");
+		background-repeat: no-repeat;
+		background-position: right bottom 264px;
+	}
+
+	.about-firstpart {
+		justify-content: flex-end;
+		margin-bottom: 312px;
+	}
+
+	.about-img {
+		width: 384px;
+		margin-right: 104px;
+		bottom: -232px;
+	}
+
+	.about-summary {
+		width: 488px;
+		flex: unset;
+	}
+
+	/*------------------*/
+	/*--- secondpart ---*/
+	/*------------------*/
+	.about-secondpart {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 104px;
+	}
+
+	.about-secondpart-list {
+		gap: 136px;
+		max-width: 904px;
 	}
 }
