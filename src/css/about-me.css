@@ -24,7 +24,6 @@
 }
 
 .about-subtitle {
-	color: #292929;
 	font-family: Poppins, sans-serif;
 	font-size: 32px;
 	font-weight: 500;
@@ -73,7 +72,7 @@
 	display: block;
 	width: 4px;
 	height: 4px;
-	background-color: #00B068;
+	background-color: var(--accent-green);
 	border-radius: 1px;
 	position: absolute;
 	top: 10px;
