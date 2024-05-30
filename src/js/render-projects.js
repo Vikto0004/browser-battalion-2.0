@@ -23,7 +23,7 @@ const renderProjects = (startIndex, numProjects) => {
       <p class="projects-item-skills">${project.skills}</p>
       <div class="projects-item-bottom">
         <h3 class="projects-item-title">${project.title}</h3>
-        <a href="https://github.com/Vikto0004/browser-battalion-2.0" class="projects-item-btn">
+        <a href="https://github.com/Vikto0004/browser-battalion-2.0" target="_blank" class="projects-item-btn">
           VISIT
           <svg class="projects-item-btn-icon">
             <use href="${spriteUrl}#icon-arrow-visit"></use>
@@ -48,17 +48,21 @@ const renderProjects = (startIndex, numProjects) => {
 };
 
 const loadMoreProjects = event => {
-  startIndex += 3;
-  renderProjects(startIndex, 3);
-  if (startIndex >= projects.length - 1) {
-    loadMoreBtn.style.display = 'none';
-  }
+  loadMoreBtn.classList.add('load');
   setTimeout(() => {
-    window.scrollBy({
-      top: 300,
-      behavior: 'smooth',
-    });
-  }, 100);
+    loadMoreBtn.classList.remove('load');
+    startIndex += 3;
+    renderProjects(startIndex, 3);
+    if (startIndex >= projects.length - 1) {
+      loadMoreBtn.style.display = 'none';
+    }
+    setTimeout(() => {
+      window.scrollBy({
+        top: 300,
+        behavior: 'smooth',
+      });
+    }, 100);
+  }, 2000);
 };
 
 renderProjects(startIndex, 3);
