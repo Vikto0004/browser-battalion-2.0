@@ -11,12 +11,12 @@
     />
     
     <script type="module" crossorigin src="/browser-battalion-2.0/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/browser-battalion-2.0/assets/index-ef549192.css">
+    <link rel="stylesheet" href="/browser-battalion-2.0/assets/index-f247f0b1.css">
   </head>
   <body>
     <!-- Oleh Volkoboy -->
     <header class="header">
-  <div class="container header-container">
+  <div class="container">
     <nav class="header-navigation">
       <a class="header-logo" href="./">Lloyd<span>Jefferson.</span></a>
       <ul class="header-list">
@@ -30,34 +30,37 @@
           <a href="#contacts" class="link-hover">Contacts</a>
         </li>
       </ul>
-      <button type="button" class="open-menu-btn ">
-        <svg class="icon-open-menu" width="16" height="16">
-          <use href="/browser-battalion-2.0/assets/sprite-43d473e9.svg#"></use>
+      <button type="button" class="open-menu-btn">
+        <svg class="icon-open-menu" width="32" height="32">
+          <use href="/browser-battalion-2.0/assets/sprite-43d473e9.svg#icon-burger"></use>
         </svg>
       </button>
     </nav>
   </div>
 
-  <div class="mob-menu-container ">
+  <div class="container mob-menu-container is-open">
     <nav class="mob-menu-navigation">
       <a class="header-logo" href="./">Lloyd<span>Jefferson.</span></a>
-      <button type="button" class="close-menu-btn js-close-menu">
-        <svg width="16" height="16" class="icon-close-btn">
-          <use href="/browser-battalion-2.0/assets/sprite-43d473e9.svg#"></use>
+      <button type="button" class="close-menu-btn">
+        <svg width="32" height="32" class="icon-close-btn">
+          <use href="/browser-battalion-2.0/assets/sprite-43d473e9.svg#icon-close"></use>
         </svg>
       </button>
     </nav>
-    <ul class="mob-menu-list">
-      <li class="mob-menu-item">
-        <a href="#about" class="mob-menu-link link-hover">About me</a>
-      </li>
-      <li class="mob-menu-item">
-        <a href="#projects" class="mob-menu-link link-hover">Projects</a>
-      </li>
-      <li class="mob-menu-item">
-        <a href="#contacts" class="mob-menu-link link-hover">Contacts</a>
-      </li>
-    </ul>
+    <div class="list-wrap">
+      <ul class="mob-menu-list">
+        <li class="mob-menu-item">
+          <a href="#about" class="link-hover">About me</a>
+        </li>
+        <li class="mob-menu-item">
+          <a href="#projects" class="link-hover">Projects</a>
+        </li>
+        <li class="mob-menu-item">
+          <a href="#contacts" class="link-hover">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
 
     <main>
