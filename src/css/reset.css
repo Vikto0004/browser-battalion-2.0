@@ -98,6 +98,14 @@ body {
   line-height: 1.5;
 }
 
+.dark-theme {
+  --black: #f0f0f0;
+  --accent-green: #14c57c;
+  --white: #1e2023;
+  --light-grey: #2a2d32;
+  --light-accent: #204136;
+}
+
 h1,
 h2,
 h3,
