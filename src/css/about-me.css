@@ -1,0 +1,143 @@
+.about {}
+
+.about-container {}
+
+.about-title {
+	margin-bottom: 40px;
+}
+
+.about-content {}
+
+/*-----------------*/
+/*--- firstpart ---*/
+/*-----------------*/
+.about-firstpart {
+	margin-bottom: 40px;
+	align-items: flex-end;
+}
+
+.about-picture {}
+
+.about-img {
+	border-radius: 16px;
+	margin-bottom: 40px;
+}
+
+.about-subtitle {
+	color: #292929;
+	font-family: Poppins, sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+
+.about-text {}
+
+.about-text:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+
+
+/*------------------*/
+/*--- secondpart ---*/
+/*------------------*/
+.about-secondpart {}
+
+.about-secondpart-list {}
+
+.about-secondpart-list-item {}
+
+.about-secondpart-list-item:first-child {
+	margin-bottom: 40px;
+}
+
+.about-secondpart-sublist {
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+}
+
+.about-secondpart-sublist-item {
+	position: relative;
+	padding-left: 32px;
+}
+
+.about-secondpart-sublist-item:before {
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	background-color: #00B068;
+	border-radius: 1px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.about-secondpart-sublist-item:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+
+
+/*---------------*/
+/*--- tablet --- */
+/*---------------*/
+@media screen and (min-width: 768px) {
+
+	/*-----------------*/
+	/*--- firstpart ---*/
+	/*-----------------*/
+	.about-firstpart {
+		display: flex;
+		gap: 32px;
+		margin-bottom: 140px;
+	}
+
+	.about-img {
+		width: 336px;
+		position: relative;
+		bottom: -80px;
+		margin-bottom: 0;
+	}
+
+	.about-summary {
+		flex: 1;
+	}
+	.about-subtitle {
+		font-size: 36px;
+		line-height: 1.33;
+		letter-spacing: 0.01em;
+	}
+	.about-content {
+		background-image: url("/img/about/about-decore-bg-tab-1x.png");
+		background-repeat: no-repeat;
+		background-position: right bottom 156px;
+	}
+
+	/*------------------*/
+	/*--- secondpart ---*/
+	/*------------------*/
+	.about-secondpart-list {
+		display: flex;
+		gap: 32px;
+	}
+
+	.about-secondpart-list-item {
+		width: 50%;
+	}
+
+	.about-secondpart-list-item:first-child {
+		margin-bottom: unset;
+	}
+
+	.about-secondpart-sublist-item:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}
