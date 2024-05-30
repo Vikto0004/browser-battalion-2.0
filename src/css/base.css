@@ -141,3 +141,11 @@ html {
   font-weight: 700;
   src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
 }
+
+/* impact-400 - latin */
+@font-face {
+  font-family: 'Impact Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/impact.woff') format('woff');
+}
