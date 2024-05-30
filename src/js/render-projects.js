@@ -22,7 +22,7 @@ function renderProjects(startIndex, numProjects) {
       <picture>
         <source class="projects-item-img" srcset="${project.images.webp['1x']} 1x, ${project.images.webp['2x']} 2x" type="image/webp">
         <source class="projects-item-img" srcset="${project.images.jpg['1x']} 1x, ${project.images.jpg['2x']} 2x" type="image/jpeg">
-        <img class="projects-item-img" src="${project.images.jpg['1x']}" alt="">
+        <img class="projects-item-img" src="${project.images.jpg['1x']}" alt="${project.title}">
       </picture>
       <p class="projects-item-skills">${project.skills}</p>
       <div class="projects-item-bottom">
