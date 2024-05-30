@@ -7,11 +7,7 @@ const loadMoreBtn = document.querySelector('.projects-load-btn');
 
 let startIndex = 0;
 
-renderProjects(startIndex, 3);
-
-loadMoreBtn.addEventListener('click', loadProjects);
-
-function renderProjects(startIndex, numProjects) {
+const renderProjects = (startIndex, numProjects) => {
   const endIndex = startIndex + numProjects;
   const projectsToRender = projects.slice(startIndex, endIndex);
 
@@ -49,9 +45,9 @@ function renderProjects(startIndex, numProjects) {
       projectsItem.classList.add('show');
     }, 100 * index);
   });
-}
+};
 
-function loadProjects(event) {
+const loadMoreProjects = event => {
   startIndex += 3;
   renderProjects(startIndex, 3);
   if (startIndex >= projects.length - 1) {
@@ -59,8 +55,11 @@ function loadProjects(event) {
   }
   setTimeout(() => {
     window.scrollBy({
-      top: 500,
+      top: 300,
       behavior: 'smooth',
     });
   }, 100);
-}
+};
+
+renderProjects(startIndex, 3);
+loadMoreBtn.addEventListener('click', loadMoreProjects);
