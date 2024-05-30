@@ -11,7 +11,9 @@
     />
     
     <script type="module" crossorigin src="/browser-battalion-2.0/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/browser-battalion-2.0/assets/index-dfa10eed.css">
+    <link rel="modulepreload" crossorigin href="/browser-battalion-2.0/assets/vendor-8b2781a5.js">
+    <link rel="stylesheet" href="/browser-battalion-2.0/assets/vendor-ed6a6904.css">
+    <link rel="stylesheet" href="/browser-battalion-2.0/assets/index-e7f97d7b.css">
   </head>
   <body>
     <!-- Oleh Volkoboy -->
@@ -165,8 +167,27 @@
 </section>
 
       <!-- Serhii Orlenko -->
-      <section class="section">
-  <div class="container"></div>
+      <section class="section-reviews">
+  <div class="container">
+    <h2 class="section-title is-reviews">Reviews</h2>
+
+    <!-- Swiper -->
+    <div id="reviews-slider" class="swiper">
+      <ul class="swiper-wrapper is-reviews"></ul>
+      <div class="reviews-slider-nav">
+        <div class="swiper-button-prev">
+          <svg width="24" height="24" class="swiper-button-prev-icon">
+            <use href="/browser-battalion-2.0/assets/sprite-43d473e9.svg#icon-arrow-right-reviews"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg width="24" height="24" class="swiper-button-next-icon">
+            <use href="/browser-battalion-2.0/assets/sprite-43d473e9.svg#icon-arrow-right-reviews"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
       <!-- Ihor Nikitin -->
