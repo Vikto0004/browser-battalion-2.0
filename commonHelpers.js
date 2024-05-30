@@ -3,7 +3,7 @@
       <picture>
         <source class="projects-item-img" srcset="${e.images.webp["1x"]} 1x, ${e.images.webp["2x"]} 2x" type="image/webp">
         <source class="projects-item-img" srcset="${e.images.jpg["1x"]} 1x, ${e.images.jpg["2x"]} 2x" type="image/jpeg">
-        <img class="projects-item-img" src="${e.images.jpg["1x"]}" alt="">
+        <img class="projects-item-img" src="${e.images.jpg["1x"]}" alt="${e.title}">
       </picture>
       <p class="projects-item-skills">${e.skills}</p>
       <div class="projects-item-bottom">
