@@ -28,6 +28,8 @@
 }
 
 .projects-item {
+  max-width: 1008px;
+  width: 100%;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
@@ -39,6 +41,7 @@
 }
 
 .projects-item-img {
+  width: 100%;
   border-radius: 16px;
   margin-bottom: 12px;
 }
