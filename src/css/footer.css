@@ -1,6 +1,6 @@
 .footer {
   padding: 40px 0 24px;
-  border-top: 1px solid #e4e5e6;
+  border-top: 1px solid var(--light-grey);
 }
 
 .footer-wrap {
@@ -20,7 +20,7 @@
 }
 
 .footer-logo span {
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 .footer-list {

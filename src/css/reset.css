@@ -78,12 +78,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --black: #292929;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
 }
 
 body {
   margin: 0;
-  background-color: #f0f0f0;
-  color: #292929;
+  background-color: var(--white);
+  color: var(--black);
   font-family: 'Poppins';
   font-style: normal;
   font-size: 16px;
