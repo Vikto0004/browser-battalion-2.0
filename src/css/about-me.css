@@ -96,18 +96,17 @@
 	.about-firstpart {
 		display: flex;
 		gap: 32px;
-		margin-bottom: 140px;
+		margin-bottom: 60px;
 	}
 
 	.about-img {
 		width: 336px;
-		position: relative;
-		bottom: -80px;
 		margin-bottom: 0;
 	}
 
 	.about-summary {
 		flex: 1;
+		padding-bottom: 80px;
 	}
 
 	.about-subtitle {
@@ -153,18 +152,18 @@
 
 	.about-firstpart {
 		justify-content: flex-end;
-		margin-bottom: 312px;
+		margin-bottom: 80px;
+		gap: 136px;
 	}
 
 	.about-img {
 		width: 384px;
-		margin-right: 104px;
-		bottom: -232px;
 	}
 
 	.about-summary {
 		width: 488px;
 		flex: unset;
+		padding-bottom: 232px;
 	}
 
 	/*------------------*/
