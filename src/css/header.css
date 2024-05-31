@@ -58,26 +58,17 @@
   align-items: center;
 }
 
-.mob-menu-container.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 .mob-menu-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
 .mob-menu-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 .close-menu-btn {
@@ -86,4 +77,15 @@
   background-color: transparent;
   padding: 0;
   stroke: #292929;
+}
+/* ---------------------TABLET-------------------------- */
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .open-menu-btn {
+    display: none;
+  }
 }
