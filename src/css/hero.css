@@ -12,7 +12,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text);
   padding: 96px 0px 40px;
 }
 
@@ -58,7 +58,7 @@
 .hero-text {
   font-weight: 400;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text);
   padding-bottom: 56px;
   margin-top: 40px;
 }

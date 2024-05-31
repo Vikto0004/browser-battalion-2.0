@@ -79,17 +79,18 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --black: #292929;
+  --text: #292929;
   --accent-green: #00b068;
   --white: #f0f0f0;
   --light-grey: #e4e5e6;
   --light-accent: #bcdfd1;
+  --green-hero-hover: rgba(0, 176, 104, 0.6);
 }
 
 body {
   margin: 0;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--text);
   font-family: 'Poppins';
   font-style: normal;
   font-size: 16px;
@@ -99,11 +100,12 @@ body {
 }
 
 .dark-theme {
-  --black: #f0f0f0;
+  --text: #f0f0f0;
   --accent-green: #14c57c;
   --white: #1e2023;
   --light-grey: #2a2d32;
   --light-accent: #204136;
+  --green-hero-hover: rgba(20, 197, 124, 0.6);
 }
 
 h1,

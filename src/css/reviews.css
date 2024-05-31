@@ -83,7 +83,7 @@
 .swiper-button-next svg {
   flex-shrink: 0;
   fill: transparent;
-  stroke: var(--black);
+  stroke: var(--text);
 }
 .swiper-button-disabled {
   border: 1px solid rgba(41, 41, 41, 0.1);
