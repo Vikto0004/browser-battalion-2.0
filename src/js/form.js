@@ -1,14 +1,14 @@
 "use strict"
 
-const form = document.querySelector('.form');
-const input = document.querySelector('.input');
-const message = document.querySelector('.message');
-const submit = document.querySelector('.submit');
-const success = document.querySelector('.success');
-const errorInput = document.querySelector('.errorInput');
-const errorMessage = document.querySelector('.errorMessage');
-const close = document.querySelector('.close');
-const backdrop = document.querySelector('.backdrop');
+const form = document.querySelector('.work-together-form');
+const input = document.querySelector('.work-together-input');
+const message = document.querySelector('.work-together-message');
+const submit = document.querySelector('.work-together-submit');
+const success = document.querySelector('.work-together-success');
+const errorInput = document.querySelector('.work-together-errorInput');
+const errorMessage = document.querySelector('.work-together-errorMessage');
+const close = document.querySelector('.work-together-close');
+const backdrop = document.querySelector('.work-together-backdrop');
 
 const checkForm = () => {
   
