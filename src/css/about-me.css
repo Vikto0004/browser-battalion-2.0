@@ -101,8 +101,6 @@
 
 	.about-img {
 		width: 336px;
-		/* position: relative; */
-		/* bottom: -80px; */
 		margin-bottom: 0;
 	}
 
@@ -155,12 +153,11 @@
 	.about-firstpart {
 		justify-content: flex-end;
 		margin-bottom: 80px;
+		gap: 136px;
 	}
 
 	.about-img {
 		width: 384px;
-		margin-right: 104px;
-		/* bottom: -232px; */
 	}
 
 	.about-summary {
