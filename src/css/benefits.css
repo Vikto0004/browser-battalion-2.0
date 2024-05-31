@@ -1,7 +1,7 @@
 .benefits {
   padding-top: 113px;
 }
-.section-title {
+.benefits-title {
   max-width: 320px;
   margin-bottom: 40px;
 }
@@ -54,7 +54,7 @@
   .benefits {
     padding-top: 124px;
   }
-  .section-title {
+  .benefits-title {
     max-width: 704px;
     max-height: 372px;
     margin-bottom: 0;
