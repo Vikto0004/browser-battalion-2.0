@@ -102,34 +102,6 @@ fetchReviews()
       .join('');
     // Add HTML to slider  wrapper
     sliderWrapper.insertAdjacentHTML('afterbegin', markup);
-
-    /* Step 4: Check if the review text 
-is > 4 lines, so if it does add ... at the end,
-and propouse user expand it if hi would like to 
-read rest.
-*/
-    document.querySelectorAll('.review-card-text').forEach(element => {
-      /*
-      Use SetTimeout to make sure the elemnt is rendered
-      */
-      setTimeout(() => {
-        const elementHeight = element.clientHeight;
-        const loadMoreLink = `<button type="button" class="review-card-button-load-more">Read more</button>`;
-
-        // Cut text if longer then 4 lines, which is increase height
-        if (elementHeight > 96) {
-          element.classList.add('is-colapsed');
-          element.insertAdjacentHTML('afterend', loadMoreLink);
-        }
-        // Remove class and expand rest text by click
-        if (element.classList.contains('is-colapsed')) {
-          element.nextSibling.addEventListener('click', event => {
-            element.classList.remove('is-colapsed');
-            element.nextSibling.remove();
-          });
-        }
-      }, 0);
-    });
   })
   .catch(error => {
     sliderWrapper.insertAdjacentHTML(
