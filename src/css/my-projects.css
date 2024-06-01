@@ -32,7 +32,8 @@
   width: 100%;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.5s var(--hover-effect),
+    transform 0.5s var(--hover-effect);
 
   &.show {
     opacity: 1;
@@ -104,10 +105,10 @@
 
   margin-left: auto;
 
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s var(--hover-effect);
 
   &:hover {
-    background-color: #bbb;
+    background-color: var(--gray-visit-hover);
   }
 }
 
@@ -135,7 +136,7 @@
   margin-top: 80px;
   padding: 0;
 
-  transition: color 0.2s ease-in-out;
+  transition: color 0.2s var(--hover-effect);
 
   &:hover {
     color: var(--accent-green);
