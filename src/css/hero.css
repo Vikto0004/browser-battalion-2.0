@@ -1,4 +1,5 @@
 .hero-section {
+  padding-top: 16px;
 }
 
 .hero-content {
@@ -6,7 +7,6 @@
     url(/img/hero/hero-decor-bg-2-mob.png);
   background-repeat: no-repeat, no-repeat;
   background-position: top, right top 362px;
-  margin: 16px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -133,7 +133,7 @@
   }
 }
 
-.hero-link-element:hover {
+.hero-link:hover .hero-link-element {
   background-color: var(--green-hero-hover);
 }
 
@@ -189,6 +189,7 @@
   align-items: center;
   gap: 24px;
   padding: 32px 0px;
+  margin-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
