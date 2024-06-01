@@ -16,20 +16,22 @@ new Accordion('.accordion-container', {
     const previousElem = getPreviousElement(currElement);
 
     if (currElement.id !== 'ac-0') {
-      previousElem.classList.add('border-animate');
-      currElement.classList.add('border-animate');
+      previousElem.classList.add('border-bottom-animate');
+      currElement.classList.add('border-bottom-animate');
     } else {
-      currElement.classList.add('border-animate');
+      currElement.classList.add('border-top-animate');
+      currElement.classList.add('border-bottom-animate');
     }
   },
   beforeClose: currElement => {
     const previousElem = getPreviousElement(currElement);
 
     if (currElement.id !== 'ac-0') {
-      previousElem.classList.remove('border-animate');
-      currElement.classList.remove('border-animate');
+      previousElem.classList.remove('border-bottom-animate');
+      currElement.classList.remove('border-bottom-animate');
     } else {
-      currElement.classList.remove('border-animate');
+      currElement.classList.remove('border-top-animate');
+      currElement.classList.remove('border-bottom-animate');
     }
   },
 });

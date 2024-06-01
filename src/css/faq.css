@@ -32,8 +32,8 @@
   bottom: 0;
 }
 
-.faq-list-item.ac.border-animate::after,
-.faq-list-item.ac.border-animate:first-child::before {
+.faq-list-item.ac.border-bottom-animate::after,
+.faq-list-item.ac.border-top-animate:first-child::before {
   width: 0%;
   left: 50%;
 }
@@ -44,11 +44,11 @@
 }
 
 button.faq-button.ac-trigger {
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.5px;
+  font: 400 18px 'Poppins', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--text);
   padding: 0 48px 0 0;
 }
 
@@ -76,8 +76,9 @@ button.faq-button.ac-trigger {
 
 .faq-item-text {
   font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 0.2px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   padding-top: 24px;
 }
 
@@ -87,5 +88,35 @@ button.faq-button.ac-trigger {
 
   .faq-dropdown {
     transform: rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .faq-title {
+    margin-bottom: 60px;
+  }
+
+  button.faq-button.ac-trigger {
+    font: 400 20px 'Poppins', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .faq-container {
+    display: flex;
+  }
+
+  .faq-title {
+    margin-bottom: 0;
+    background-image: url(../img/faq/decor-bg-4-min.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  .faq-list {
+    max-width: 592px;
+    margin-top: 276px;
   }
 }
