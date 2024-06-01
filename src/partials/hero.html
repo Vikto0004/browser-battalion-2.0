@@ -1,47 +1,52 @@
-<section class="hero-section" id="hero">
+<section class="section hero-section" id="hero">
   <div class="container">
     <div class="hero-content">
-      <h1 class="hero-title">
-        Hello, I am
-        <span class="hero-title-part">Fullstack developer</span>
-      </h1>
-      <div class="hero-space-link">
-        <svg class="social-icons" width="30" height="16">
-          <use href="/img/sprite.svg#icon-arrow-right-hero"></use>
-        </svg>
-        <a class="hero-link" href="">Order the project</a>
+      <div class="hero-first-part">
+        <h1 class="hero-title">
+          Hello, I am
+          <span class="hero-title-part">Fullstack developer</span>
+        </h1>
+        <a class="hero-link" href="#work-together">
+          <span class="hero-link-span"
+            ><svg class="social-icons" width="30" height="16">
+              <use href="/img/sprite.svg#icon-arrow-right-hero"></use></svg
+            >Order the project</span
+          >
+        </a>
       </div>
-      <picture>
-        <source
-          srcset="
-            ./img/hero/hero-webp/hero-img-dp-1x.webp 1x,
-            ./img/hero/hero-webp/hero-img-dp-2x.webp 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            /img/hero/hero-img-dp-1x.jpg 1x,
-            /img/hero/hero-img-dp-2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-          type="image/jpg"
-        />
-        <img
-          src="/img/hero/hero-img-dp-1x.jpg"
-          alt="photo-of-Lloyd-Jefferson"
-          width="592"
-          height="444"
-          class="hero-img"
-        />
-      </picture>
-      <p class="hero-text">
-        I work with people all over the world to create
-        <span class="hero-text-part">impressive</span> and
-        <span class="hero-text-part">functional websites</span> that reflect
-        each client’s unique personality.
-      </p>
+      <div class="hero-second-part">
+        <picture>
+          <source
+            srcset="
+              ./img/hero/hero-webp/hero-img-dp-1x.webp 1x,
+              ./img/hero/hero-webp/hero-img-dp-2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              /img/hero/hero-img-dp-1x.jpg 1x,
+              /img/hero/hero-img-dp-2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/jpg"
+          />
+          <img
+            src="/img/hero/hero-img-dp-1x.jpg"
+            alt="photo-of-Lloyd-Jefferson"
+            width="592"
+            height="444"
+            class="hero-img"
+          />
+        </picture>
+        <p class="hero-text">
+          I work with people all over the world to create
+          <span class="hero-text-part">impressive</span> and
+          <span class="hero-text-part">functional websites</span> that reflect
+          each client’s unique personality.
+        </p>
+      </div>
     </div>
   </div>
   <ul class="hero-social-list">
