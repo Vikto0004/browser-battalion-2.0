@@ -46,7 +46,7 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-  border: 1px solid rgba(41, 41, 41, 0.3);
+  border: 1px solid var(--reviews-slider-btn-border);
   border-radius: 8px;
   padding: 12px;
   width: 40px !important;
@@ -66,10 +66,7 @@
   stroke: var(--text);
 }
 .swiper-button-disabled {
-  border: 1px solid rgba(41, 41, 41, 0.1);
-}
-.swiper-button-disabled svg {
-  stroke: #cccccc;
+  opacity: 0.3;
 }
 
 @media screen and (min-width: 1280px) {
