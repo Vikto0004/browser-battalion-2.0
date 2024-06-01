@@ -1,29 +1,33 @@
 "use strict"
 
+import axios from "axios";
+import iziToast from "izitoast";
+
 const form = document.querySelector('.work-together-form');
 const input = document.querySelector('.work-together-input');
 const message = document.querySelector('.work-together-message');
-const submit = document.querySelector('.work-together-submit');
 const success = document.querySelector('.work-together-success');
 const errorInput = document.querySelector('.work-together-errorInput');
 const errorMessage = document.querySelector('.work-together-errorMessage');
 const close = document.querySelector('.work-together-close');
 const backdrop = document.querySelector('.work-together-backdrop');
-
-const checkForm = () => {
-  
-    if(message.value !== "" && input.value !== "") {
-        backdrop.classList.add('is-open')
-        form.reset();
-        errorInput.style.display = 'none'
-        errorMessage.style.display = 'none'
-        success.style.display = 'none'
-    }
-};
+const loader = document.querySelector('.work-together-loader');
 
 close.addEventListener('click', () => {
-    backdrop.classList.remove('is-open')
-})
+    backdrop.classList.remove('backdrop-is-open');
+});
+
+window.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        backdrop.classList.remove('backdrop-is-open')
+    }
+});
+
+backdrop.addEventListener('click', e => {
+    if(e.target === e.currentTarget) {
+        backdrop.classList.remove('backdrop-is-open')
+    }
+});
 
 const checkEmail = () => {
     if (input.validity.valid) {
@@ -38,6 +42,7 @@ const checkEmail = () => {
 };
 
 input.addEventListener('input', checkEmail);
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -54,6 +59,34 @@ form.addEventListener('submit', e => {
     }
 
     if(input.value.trim() !== "" && message.value.trim() !== "") {
-        checkForm();
-    }
+        loader.classList.remove('is-hide');
+
+        axios.post('https://portfolio-js.b.goit.study/api/requests', {
+            "email": input.value,
+            "comment": message.value,
+        })
+        .then(res => {
+            loader.classList.add('is-hide');
+            backdrop.classList.add('backdrop-is-open');
+            errorInput.style.display = 'none';
+            errorMessage.style.display = 'none';
+            success.style.display = 'none';
+            form.reset();
+
+            console.log(res);
+        })
+        .catch(error => {
+            loader.classList.add('is-hide');
+
+            iziToast.error({
+                title: 'Error',
+                message: error.message,
+            });
+        })
+    };
+
 });
+
+// -POST-----POST-----POST-----POST-----POST-----POST-----POST///
+
+
