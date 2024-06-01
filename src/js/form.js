@@ -28,7 +28,11 @@ close.addEventListener('click', () => {
 const checkEmail = () => {
     if (input.validity.valid) {
         success.style.display = 'block'
+        errorInput.style.display = 'none'
     } else {
+        success.style.display = 'none'
+    }
+    if(input.value === "") {
         success.style.display = 'none'
     }
 };
@@ -41,10 +45,13 @@ form.addEventListener('submit', e => {
     if(input.value.trim() === "") {
         errorInput.style.display = 'block'
         errorInput.textContent = 'the field must be filled'
-    } 
+    }
+    
     if(message.value.trim() === "") {
         errorMessage.style.display = 'block'
-    } 
+    } else {
+        errorMessage.style.display = 'none'
+    }
 
     if(input.value.trim() !== "" && message.value.trim() !== "") {
         checkForm();
