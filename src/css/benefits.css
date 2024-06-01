@@ -1,5 +1,6 @@
 .benefits {
   padding-top: 113px;
+  padding-bottom: 47px;
 }
 .benefits-title {
   max-width: 320px;
@@ -52,12 +53,13 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    padding-top: 124px;
+    padding-top: 0;
+    padding-bottom: 124px;
   }
   .benefits-title {
     max-width: 704px;
     max-height: 372px;
-    margin-bottom: 0;
+    margin-bottom: -20px;
   }
   .benefits-list {
     display: grid;
@@ -87,7 +89,14 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* .benefits-list {
+  .benefits {
+    padding-bottom: 164px;
+  }
+  .benefits-title {
+    max-width: 681px;
+    margin-bottom: -96px;
+  }
+  .benefits-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -102,5 +111,5 @@
   }
   .benefits-list-item:nth-child(4) {
     grid-column: 3;
-  } */
+  }
 }
