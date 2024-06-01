@@ -11,7 +11,6 @@ if (savedTheme == 'true') {
 
 if (isDarkThemeActive) {
   checkboxEl.checked = true;
-  document.body.style.transition = 'all 0.3s ease';
 }
 
 checkboxEl.addEventListener('change', () => {
