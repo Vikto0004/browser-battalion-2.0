@@ -1,9 +1,11 @@
 const openMenu = () => {
   document.querySelector('.mob-menu-container').classList.add('is-open');
+  document.body.style.overflow = 'hidden';
 };
 
 const closeMenu = () => {
   document.querySelector('.mob-menu-container').classList.remove('is-open');
+  document.body.style.overflow = 'auto';
 };
 
 document.querySelector('.open-menu-btn').addEventListener('click', openMenu);
