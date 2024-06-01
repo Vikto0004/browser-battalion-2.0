@@ -106,18 +106,29 @@ button.faq-button.ac-trigger {
 @media screen and (min-width: 1280px) {
   .faq-container {
     display: flex;
-    height: 1020px;
+    position: relative;
+  }
+
+  .faq-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
   }
 
   .faq-title {
     margin-bottom: 0;
+  }
+
+  .faq-img-wrap {
     background-image: url(../img/faq/decor-bg-4-min.png);
     background-repeat: no-repeat;
     background-position: left bottom;
+    background-size: 526px 408px;
+    height: 408px;
   }
 
   .faq-list {
     max-width: 592px;
-    margin-top: 276px;
+    transform: translateY(27%);
   }
 }
