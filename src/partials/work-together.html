@@ -4,29 +4,7 @@
       <h3 class="section-title work-together-title">
         let’s <span>work together</span>
       </h3>
-      <picture>
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-          img/together/decor lapt.png 1x,
-          img/together/decor lapt2x.png 2x
-        "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-          img/together/decor tabl.png 1x,
-          img/together/decor tabl2x.png 2x
-        "
-        />
-        <img
-          class="together-img"
-          src="img/together/decor lapt.png "
-          alt="decor"
-          width="526"
-          height="408"
-        />
-      </picture>
+      <div class="work-together-decor"></div>
       <p class="work-together-text">
         Contact me to transform your ideas into exceptional solutions.
       </p>
@@ -82,7 +60,11 @@
     </div>
     <div class="work-together-backdrop">
       <div class="work-together-modal">
-        <button class="work-together-close">X</button>
+        <button class="work-together-close">
+          <svg class="work-together-close-icon" width="24" height="24">
+            <use href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
         <h2 class="work-together-modal-title">
           Thank you for your interest in cooperation!
         </h2>
