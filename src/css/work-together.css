@@ -23,7 +23,7 @@
     gap: 16px;
 }
 .work-together-icon {
-    stroke: rgba(0, 176, 104, 1);
+    stroke: var(--accent-green);
     fill: transparent;
 }
 .work-together-link {
@@ -34,6 +34,10 @@
     letter-spacing: 0.03em;
     color: rgba(41, 41, 41, 1);
     transition: color .4s ease;
+}
+.work-together-link:hover,
+.work-together-link:focus {
+    color: var(--accent-green);
 }
 .work-together-form {
     display: grid;
@@ -49,6 +53,17 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: rgba(41, 41, 41, 1);
+    transition: all .3s ease;
+    resize: none;
+}
+.work-together-input:hover,
+.work-together-message:hover{
+    box-shadow: 1px 1px 3px rgb(169, 169, 169);
+}
+.work-together-input:focus,
+.work-together-message:focus{
+    outline: none;
+    box-shadow: 1px 1px 5px rgb(124, 124, 124);
 }
 .work-together-input {
     padding: 12px;
@@ -61,7 +76,7 @@
     position: absolute;
     right: 17px;
     top: 17px;
-    fill: rgba(0, 176, 104, 1);
+    fill: var(--accent-green);
     display: none;
 }
 .work-together-message {
@@ -78,12 +93,12 @@
     letter-spacing: 0.03em;
 }
 .work-together-sumbit {
-    background-color: rgba(0, 176, 104, 1);
+    background-color: var(--accent-green);
     border: none;
     border-radius: 10px;
     color: rgba(240, 240, 240, 1);
     height: 48px;
-    transition: color 0.4s ease;
+    transition: all 0.4s ease;
 }
 .work-together-sumbit:hover,
 .work-together-sumbit:focus {
@@ -101,6 +116,7 @@
     margin-top: -28px;
 }
 .work-together-backdrop {
+    z-index: 1000;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -110,8 +126,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(41, 41, 41, 1);
+    transition: opacity .5s ease-in;
+}
+.work-together-backdrop .is-open {
     opacity: .8;
-    animation: is-open;
+    visibility: visible;
+    pointer-events: auto;
 }
 .work-together-modal {
     position: absolute;
@@ -133,10 +153,12 @@
     transition: all .4s ease;
     font-size: 20px;
 }
-.work-together-close:hover {
-    transform: scale(1.2);
-    border: 1px solid black;
-    background-color: rgb(210, 209, 209);
+.work-together-close-icon {
+    stroke: black;
+    transition: all .4s ease;
+}
+.work-together-close-icon:hover {
+    transform: scale(1.4);
 }
 .work-together-modal-title {
     font-family: 'Poppins', sans-serif;
@@ -146,7 +168,7 @@
     text-align: center;
     letter-spacing: 0.025em;
     text-transform: uppercase;
-    color: rgba(0, 176, 104, 1);
+    color: var(--accent-green);
     margin-bottom: 16px;
 }
 .work-together-modal-text {
@@ -158,9 +180,7 @@
     text-align: center;
     color: rgba(41, 41, 41, 1);
 }
-.work-together-together-img {
-    display: none;
-}
+
 
 @media screen and (min-width: 768px) {
     .work-together-title {
@@ -169,13 +189,17 @@
     .section-together {
         position: relative;
     }
-    .together-img {
-        display: block;
+    .work-together-decor {
         position: absolute;
-        top: 0;
-        right: 32px;
+        top: -104px;
+        right: 30px;
         width: 336px;
         height: 260px;
+        background-image: image-set(
+          url("/img/together/decor tabl.png") 1x,
+          url("/img/together/decor tabl2x.png") 2x
+        );
+        background-repeat: no-repeat;
     }
     .work-together-text {
         width: 488px;
@@ -209,9 +233,14 @@
        width: 515px;
        margin-bottom: 80px;
     }
-    .together-img {
+    .work-together-decor {
+        top: -144px;
         width: 526px;
         height: 408px;
+        background-image: image-set(
+          url("/img/together/decor lapt.png") 1x,
+          url("/img/together/decor lapt2x.png") 2x
+        );
     }
     .work-together-text {
         margin-bottom: 120px;
