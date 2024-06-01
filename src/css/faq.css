@@ -106,6 +106,7 @@ button.faq-button.ac-trigger {
 @media screen and (min-width: 1280px) {
   .faq-container {
     display: flex;
+    height: 1020px;
   }
 
   .faq-title {
