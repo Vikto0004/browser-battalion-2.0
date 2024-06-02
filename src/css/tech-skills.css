@@ -24,6 +24,7 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+    width: 100vw;
 }
 
 .tech-skills-box-second {
@@ -36,8 +37,6 @@
 .tech-skils-running-line-list {
     display: flex;
     animation: runnung-line 4s var(--hover-effect) infinite;
-    min-width: 196%;
-
 }
 
 .tech-skils-running-line-list.type-two {
@@ -96,18 +95,18 @@
 
 /* ========================== TABLET STYLES ========================== */
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     .tech-skils-running-line-list {
         min-width: 126%;
     }
-}
+} */
 
 
 /* ========================== DESKTOP STYLES ========================== */
 
 
-@media screen and (min-width:1280px) {
+/* @media screen and (min-width:1280px) {
     .tech-skils-running-line-list {
         min-width: 80%;
     }
-}
+} */
