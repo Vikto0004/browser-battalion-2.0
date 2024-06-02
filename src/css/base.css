@@ -78,4 +78,5 @@ html {
   visibility: visible;
   pointer-events: auto;
   transform: translateX(0);
+  display: flex;
 }
