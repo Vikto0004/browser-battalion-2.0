@@ -7,7 +7,7 @@
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text);
   text-transform: uppercase;
   margin-bottom: 32px;
 }
@@ -32,7 +32,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text);
 }
 .work-together-form {
   display: grid;
@@ -47,7 +47,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text);
   transition: all 0.3s ease;
   resize: none;
 }
@@ -78,7 +78,7 @@
 }
 .work-together-input::placeholder,
 .work-together-message::placeholder {
-  color: var(--black);
+  color: var(--text);
   opacity: 0.4;
   font-weight: 300;
   font-size: 16px;
@@ -121,11 +121,6 @@
   background-color: var(--background-work-together-backdrop);
   transition: all 0.5s ease-in;
 }
-.backdrop-is-open {
-  opacity: 0.8;
-  visibility: visible;
-  pointer-events: auto;
-}
 .work-together-modal {
   position: absolute;
   top: 50%;
@@ -134,11 +129,12 @@
   width: 320px;
   height: 328px;
   background-color: var(--white);
-  border: 1px solid var(--black);
+  border: 1px solid var(--text);
   border-radius: 16px;
   padding: 48px 32px;
 }
 .work-together-close {
+  background-color: transparent;
   position: absolute;
   top: 16px;
   right: 16px;
@@ -147,7 +143,7 @@
   font-size: 20px;
 }
 .work-together-close-icon {
-  stroke: var(--black);
+  stroke: var(--text);
   transition: all 0.4s ease;
 }
 .work-together-close-icon:hover {
@@ -171,7 +167,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--black);
+  color: var(--text);
 }
 
 /* ------------loader------- */
@@ -184,7 +180,7 @@
   width: 70px;
   height: 70px;
   border: 5px solid var(--accent-green);
-  border-bottom-color: var(--black);
+  border-bottom-color: var(--text);
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
