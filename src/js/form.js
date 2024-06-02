@@ -1,7 +1,7 @@
-"use strict"
+'use strict';
 
-import axios from "axios";
-import iziToast from "izitoast";
+import axios from 'axios';
+import iziToast from 'izitoast';
 
 const form = document.querySelector('.work-together-form');
 const input = document.querySelector('.work-together-input');
@@ -14,86 +14,80 @@ const backdrop = document.querySelector('.work-together-backdrop');
 const loader = document.querySelector('.work-together-loader');
 
 close.addEventListener('click', () => {
-    backdrop.classList.remove('is-open');
+  backdrop.classList.remove('is-open');
 });
 
 window.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-        backdrop.classList.remove('is-open')
-    }
+  if (e.key === 'Escape') {
+    backdrop.classList.remove('is-open');
+  }
 });
 
 backdrop.addEventListener('click', e => {
-    if(e.target === e.currentTarget) {
-        backdrop.classList.remove('is-open')
-    }
+  if (e.target === e.currentTarget) {
+    backdrop.classList.remove('is-open');
+  }
 });
 
 const checkEmail = () => {
-    if (input.validity.valid) {
-        success.style.display = 'block'
-        errorInput.style.display = 'none'
-    } else {
-        success.style.display = 'none'
-    }
-    if(input.value === "") {
-        success.style.display = 'none'
-    }
+  if (input.validity.valid) {
+    success.style.display = 'block';
+    errorInput.style.display = 'none';
+  } else {
+    success.style.display = 'none';
+  }
+  if (input.value === '') {
+    success.style.display = 'none';
+  }
 };
 
 input.addEventListener('input', checkEmail);
 
-
 form.addEventListener('submit', e => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if(input.value.trim() === "") {
-        errorInput.style.display = 'block'
-        errorInput.textContent = 'the field must be filled'
-    }
-    
-    if(message.value.trim() === "") {
-        errorMessage.style.display = 'block'
-    } else {
-        errorMessage.style.display = 'none'
-    }
+  if (input.value.trim() === '') {
+    errorInput.style.display = 'block';
+    errorInput.textContent = 'the field must be filled';
+  }
 
-    if(input.value.trim() !== "" && message.value.trim() !== "") {
-        loader.classList.remove('is-hide');
+  if (message.value.trim() === '') {
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+  }
 
-        axios.post('https://portfolio-js.b.goit.study/api/requests', {
-            "email": input.value,
-            "comment": message.value,
-        })
-        .then(res => {
-            
-            loader.classList.add('is-hide');
-            backdrop.classList.add('is-open');
+  if (input.value.trim() !== '' && message.value.trim() !== '') {
+    loader.classList.remove('is-hide');
 
-            const title = document.querySelector('.work-together-modal-title');
-            const text = document.querySelector('.work-together-modal-text');
+    axios
+      .post('https://portfolio-js.b.goit.study/api/requests', {
+        email: input.value,
+        comment: message.value,
+      })
+      .then(res => {
+        loader.classList.add('is-hide');
+        backdrop.classList.add('is-open');
 
-            title.textContent = res.data.title;
-            text.textContent = res.data.message;
-            
-            console.log(res);
+        const title = document.querySelector('.work-together-modal-title');
+        const text = document.querySelector('.work-together-modal-text');
 
-            errorInput.style.display = 'none';
-            errorMessage.style.display = 'none';
-            success.style.display = 'none';
-            form.reset();
-        })
-        .catch(error => {
-            loader.classList.add('is-hide');
+        title.textContent = res.data.title;
+        text.textContent = res.data.message;
 
-            iziToast.error({
-                title: 'Error',
-                message: error.message,
-                position: 'center',
-            });
-        })
-    };
+        errorInput.style.display = 'none';
+        errorMessage.style.display = 'none';
+        success.style.display = 'none';
+        form.reset();
+      })
+      .catch(error => {
+        loader.classList.add('is-hide');
 
+        iziToast.error({
+          title: 'Error',
+          message: error.message,
+          position: 'center',
+        });
+      });
+  }
 });
-
-
