@@ -113,6 +113,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
