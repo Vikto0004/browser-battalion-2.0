@@ -36,7 +36,7 @@
 .tech-skils-running-line-list {
     display: flex;
     animation: runnung-line 4s var(--hover-effect) infinite;
-    min-width: 340%;
+    min-width: 196%;
 
 }
 
@@ -57,6 +57,21 @@
     position: relative;
 }
 
+.tech-skils-running-line-item::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    border-radius: 20%;
+    left: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-green);
+
+}
+
+.tech-skils-running-line-item.type-two::after {
+    background-color: var(--text);
+}
 
 @keyframes runnung-line {
     from {
@@ -78,15 +93,21 @@
     }
 }
 
-.tech-skils-running-line-item::after {
-    content: '';
-    position: absolute;
-    top: 45%;
-    border: 2px solid var(--text);
-    border-radius: 15%;
-    left: -5px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--accent-green);
 
+/* ========================== TABLET STYLES ========================== */
+
+@media screen and (min-width:768px) {
+    .tech-skils-running-line-list {
+        min-width: 126%;
+    }
+}
+
+
+/* ========================== DESKTOP STYLES ========================== */
+
+
+@media screen and (min-width:1280px) {
+    .tech-skils-running-line-list {
+        min-width: 80%;
+    }
 }
