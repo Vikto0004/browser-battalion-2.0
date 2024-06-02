@@ -1,0 +1,73 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ========================== MOBILE STYLES ========================== */
+
+.running-line-container {
+    overflow: hidden;
+}
+
+.tech-skills-box {
+    background-color: var(--light-accent);
+}
+
+.tech-skils-running-line-list {
+    display: flex;
+    white-space: nowrap;
+    animation: runnung-line 3s ease-in infinite;
+    min-width: 100%;
+}
+
+.tech-skils-running-line-item {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 32px 20px;
+    white-space: nowrap;
+    position: relative;
+}
+
+@keyframes runnung-line {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.tech-skils-running-line-item::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    border: 2px solid var(--text);
+    border-radius: 15%;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-green);
+
+}
+
+.tech-skils-running-line-list.style-2 {
+    color: var(--accent-green);
+    background-color: var(--light-grey);
+}
+
+.tech-skils-running-line-list.style-2::after {
+    background-color: var(--text);
+}
