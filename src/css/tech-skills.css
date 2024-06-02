@@ -11,6 +11,7 @@
     overflow: hidden;
 }
 
+
 /* ========================== MOBILE STYLES ========================== */
 
 
@@ -25,19 +26,15 @@
 
 .tech-skills-box-second {
     background-color: var(--light-grey);
-    overflow: hidden;
     display: flex;
     transform: rotate(2deg);
-    position: relative;
-    top: -20px;
-    left: -10px;
     z-index: 2;
 }
 
 .tech-skils-running-line-list {
     display: flex;
     animation: runnung-line 4s var(--hover-effect) infinite;
-    min-width: 400%;
+    min-width: 180%;
 
 }
 
@@ -57,19 +54,6 @@
     white-space: nowrap;
     position: relative;
 }
-
-.tech-skils-running-line-item {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 125%;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    padding: 32px 20px;
-    white-space: nowrap;
-    position: relative;
-}
-
 
 
 @keyframes runnung-line {
