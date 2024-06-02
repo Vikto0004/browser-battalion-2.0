@@ -151,4 +151,20 @@
     height: 2px;
     background-color: var(--accent-green);
   }
+
+  &.load::after {
+    animation: expand-width 1s infinite;
+  }
+}
+
+@keyframes expand-width {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

@@ -48,18 +48,21 @@ const renderProjects = (startIndex, numProjects) => {
 };
 
 const loadMoreProjects = event => {
-  loadMoreBtn.classList.remove('load');
-  startIndex += 3;
-  renderProjects(startIndex, 3);
-  if (startIndex >= projects.length - 1) {
-    loadMoreBtn.style.display = 'none';
-  }
+  loadMoreBtn.classList.add('load');
   setTimeout(() => {
-    window.scrollBy({
-      top: 300,
-      behavior: 'smooth',
-    });
-  }, 100);
+    loadMoreBtn.classList.remove('load');
+    startIndex += 3;
+    renderProjects(startIndex, 3);
+    if (startIndex >= projects.length - 1) {
+      loadMoreBtn.style.display = 'none';
+    }
+    setTimeout(() => {
+      window.scrollBy({
+        top: 300,
+        behavior: 'smooth',
+      });
+    }, 100);
+  }, 1000);
 };
 
 renderProjects(startIndex, 3);
