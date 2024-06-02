@@ -1,4 +1,4 @@
-.faq-title {
+.faq-title-wrap {
   margin-bottom: 40px;
 }
 
@@ -92,7 +92,7 @@ button.faq-button.ac-trigger {
 }
 
 @media screen and (min-width: 768px) {
-  .faq-title {
+  .faq-title-wrap {
     margin-bottom: 60px;
   }
 
@@ -113,9 +113,6 @@ button.faq-button.ac-trigger {
     display: flex;
     flex-direction: column;
     gap: 240px;
-  }
-
-  .faq-title {
     margin-bottom: 0;
   }
 
@@ -129,6 +126,8 @@ button.faq-button.ac-trigger {
 
   .faq-list {
     max-width: 592px;
-    transform: translateY(27%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
