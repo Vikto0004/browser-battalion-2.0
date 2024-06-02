@@ -9,12 +9,6 @@
   background-position: top, right top 362px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
-  .hero-content {
-    background-size: contain;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero-content {
     background-image: url(/img/hero/hero-decor-bg-1-tab.png),
@@ -37,6 +31,7 @@
 }
 
 .hero-first-part {
+  margin-bottom: 72px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -44,6 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    margin-bottom: 0;
   }
 }
 
@@ -96,7 +92,6 @@
   align-items: center;
   gap: 12px;
   z-index: 5;
-  margin-bottom: 72px;
   max-width: 416px;
 }
 
@@ -109,6 +104,7 @@
 @media screen and (min-width: 1280px) {
   .hero-link {
     margin-left: 76px;
+    margin-bottom: 0;
   }
 }
 
@@ -128,7 +124,8 @@
   }
 }
 
-.hero-link-element {
+.hero-link::after {
+  content: '';
   width: 165px;
   height: 92px;
   z-index: -1;
@@ -139,19 +136,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-link-element {
+  .hero-link::after {
     margin-left: -107px;
     width: 261px;
     height: 96px;
   }
 }
 
-.hero-link:hover .hero-link-element {
+.hero-link:hover::after {
   background-color: var(--green-hero-hover);
 }
 
 .hero-second-part {
-  min-width: 592px;
+  padding-bottom: 56px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -159,6 +156,8 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    min-width: 592px;
+    padding-bottom: 0;
   }
 }
 
@@ -180,7 +179,6 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--text);
-  padding-bottom: 56px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 360px) {
@@ -193,7 +191,6 @@
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    padding-bottom: 88px;
   }
 }
 
