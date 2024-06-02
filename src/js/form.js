@@ -14,18 +14,18 @@ const backdrop = document.querySelector('.work-together-backdrop');
 const loader = document.querySelector('.work-together-loader');
 
 close.addEventListener('click', () => {
-    backdrop.classList.remove('backdrop-is-open');
+    backdrop.classList.remove('is-open');
 });
 
 window.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
-        backdrop.classList.remove('backdrop-is-open')
+        backdrop.classList.remove('is-open')
     }
 });
 
 backdrop.addEventListener('click', e => {
     if(e.target === e.currentTarget) {
-        backdrop.classList.remove('backdrop-is-open')
+        backdrop.classList.remove('is-open')
     }
 });
 
@@ -68,7 +68,7 @@ form.addEventListener('submit', e => {
         .then(res => {
             
             loader.classList.add('is-hide');
-            backdrop.classList.add('backdrop-is-open');
+            backdrop.classList.add('is-open');
 
             const title = document.querySelector('.work-together-modal-title');
             const text = document.querySelector('.work-together-modal-text');
@@ -95,6 +95,5 @@ form.addEventListener('submit', e => {
     };
 
 });
-
 
 
