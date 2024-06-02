@@ -20,6 +20,7 @@
 
 .tech-skills-box {
     display: flex;
+    padding: 32px 0px;
     background-color: var(--light-accent);
     overflow: hidden;
     position: relative;
@@ -29,6 +30,7 @@
 
 .tech-skills-box-second {
     display: flex;
+    padding: 32px 0px;
     background-color: var(--light-grey);
     transform: rotate(2deg);
     z-index: 2;
@@ -48,7 +50,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 32px;
-    line-height: 125%;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     padding: 32px 20px;
@@ -95,18 +97,19 @@
 
 /* ========================== TABLET STYLES ========================== */
 
-/* @media screen and (min-width:768px) {
-    .tech-skils-running-line-list {
-        min-width: 126%;
+@media screen and (min-width:768px) {
+
+    .tech-skills-box {
+        padding: 40px 0px;
     }
-} */
 
-
-/* ========================== DESKTOP STYLES ========================== */
-
-
-/* @media screen and (min-width:1280px) {
-    .tech-skils-running-line-list {
-        min-width: 80%;
+    .tech-skills-box-second {
+        padding: 40px 0px;
     }
-} */
+
+    .tech-skils-running-line-item {
+        font-size: 36px;
+        line-height: 1.33333;
+        letter-spacing: 0.01em;
+    }
+}
