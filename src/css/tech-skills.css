@@ -14,19 +14,21 @@
 
 /* ========================== MOBILE STYLES ========================== */
 
-
+.tech-skills-section {
+    overflow: hidden;
+}
 
 .tech-skills-box {
+    display: flex;
     background-color: var(--light-accent);
     overflow: hidden;
-    display: flex;
     position: relative;
     z-index: 1;
 }
 
 .tech-skills-box-second {
-    background-color: var(--light-grey);
     display: flex;
+    background-color: var(--light-grey);
     transform: rotate(2deg);
     z-index: 2;
 }
@@ -34,7 +36,7 @@
 .tech-skils-running-line-list {
     display: flex;
     animation: runnung-line 4s var(--hover-effect) infinite;
-    min-width: 180%;
+    min-width: 340%;
 
 }
 
@@ -87,13 +89,4 @@
     height: 10px;
     background-color: var(--accent-green);
 
-}
-
-.tech-skils-running-line-list.style-2 {
-    color: var(--accent-green);
-    background-color: var(--light-grey);
-}
-
-.tech-skils-running-line-list.style-2::after {
-    background-color: var(--text);
 }
