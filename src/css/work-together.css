@@ -176,6 +176,7 @@
 
 /* ------------loader------- */
 .work-together-loader {
+  display: block;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -199,6 +200,7 @@
   }
 }
 .is-hide {
+  display: none;
   visibility: hidden;
   opacity: 0;
   cursor: none;
@@ -211,7 +213,7 @@
     min-width: 508px;
     margin-bottom: 60px;
   }
-  .section-together {
+  .work-together-container {
     position: relative;
   }
   .work-together-decor {
@@ -234,6 +236,9 @@
   }
   .work-together-list {
     flex-direction: row;
+    margin-bottom: 0;
+  }
+  .work-together-section-left {
     margin-bottom: 60px;
   }
   .work-together-item {
@@ -259,6 +264,7 @@
     margin-bottom: 80px;
   }
   .work-together-decor {
+    background-size: 100%;
     top: -144px;
     width: 526px;
     height: 408px;
@@ -277,12 +283,16 @@
   .work-together-link {
     font-size: 18px;
   }
+  .work-together-section-left {
+    margin-bottom: 0;
+  }
   .work-together-container {
     display: flex;
     justify-content: space-between;
   }
   .work-together-section-right {
-    padding-top: 330px;
+    display: flex;
+    align-items: flex-end;
   }
   .work-together-input {
     width: 592px;
