@@ -121,7 +121,7 @@
   background-color: var(--background-work-together-backdrop);
   transition: all 0.5s ease-in;
 }
-.backdrop-is-open {
+.is-open {
   opacity: 0.8;
   visibility: visible;
   pointer-events: auto;
