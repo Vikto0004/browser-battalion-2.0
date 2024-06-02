@@ -164,4 +164,8 @@
   .mob-menu-container {
     display: none;
   }
+
+  .theme-checkbox {
+    margin: 0 40px 0 auto;
+  }
 }
