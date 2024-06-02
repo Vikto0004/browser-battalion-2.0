@@ -66,14 +66,22 @@ form.addEventListener('submit', e => {
             "comment": message.value,
         })
         .then(res => {
+            
             loader.classList.add('is-hide');
             backdrop.classList.add('backdrop-is-open');
+
+            const title = document.querySelector('.work-together-modal-title');
+            const text = document.querySelector('.work-together-modal-text');
+
+            title.textContent = res.data.title;
+            text.textContent = res.data.message;
+            
+            console.log(res);
+
             errorInput.style.display = 'none';
             errorMessage.style.display = 'none';
             success.style.display = 'none';
             form.reset();
-
-            console.log(res);
         })
         .catch(error => {
             loader.classList.add('is-hide');
@@ -81,12 +89,12 @@ form.addEventListener('submit', e => {
             iziToast.error({
                 title: 'Error',
                 message: error.message,
+                position: 'center',
             });
         })
     };
 
 });
 
-// -POST-----POST-----POST-----POST-----POST-----POST-----POST///
 
 
