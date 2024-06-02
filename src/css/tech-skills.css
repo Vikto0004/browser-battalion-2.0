@@ -13,19 +13,37 @@
 
 /* ========================== MOBILE STYLES ========================== */
 
-.running-line-container {
-    overflow: hidden;
-}
+
 
 .tech-skills-box {
     background-color: var(--light-accent);
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.tech-skills-box-second {
+    background-color: var(--light-grey);
+    overflow: hidden;
+    display: flex;
+    transform: rotate(2deg);
+    position: relative;
+    top: -20px;
+    left: -10px;
+    z-index: 2;
 }
 
 .tech-skils-running-line-list {
     display: flex;
-    white-space: nowrap;
-    animation: runnung-line 3s ease-in infinite;
-    min-width: 100%;
+    animation: runnung-line 4s var(--hover-effect) infinite;
+    min-width: 400%;
+
+}
+
+.tech-skils-running-line-list.type-two {
+    animation: runnung-line-type-two 4s var(--hover-effect) infinite;
+    color: var(--accent-green);
 }
 
 .tech-skils-running-line-item {
@@ -40,7 +58,31 @@
     position: relative;
 }
 
+.tech-skils-running-line-item {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 32px 20px;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+
 @keyframes runnung-line {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes runnung-line-type-two {
     from {
         transform: translateX(0);
     }
