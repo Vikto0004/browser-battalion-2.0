@@ -44,6 +44,7 @@
   bottom: 3%;
   transform: scale(0);
   visibility: hidden;
+  z-index: 99999;
   opacity: 0;
   transition: all 0.3s var(--hover-effect);
 }
