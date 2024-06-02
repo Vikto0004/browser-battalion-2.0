@@ -102,6 +102,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.5;
   transition: background-color 0.2s var(--hover-effect);
+  overflow-x: hidden;
 }
 
 .dark-theme {
