@@ -43,7 +43,9 @@
           type="email"
           placeholder="Your email*"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          id="enter-email"
         />
+        <label for="enter-email" class="visually-hidden">Enter email</label>
         <svg class="work-together-success" width="14" height="14">
           <use href="img/sprite.svg#icon-ep_success-filled"></use>
         </svg>
@@ -53,7 +55,9 @@
           name="Message"
           placeholder="Message"
           minlength="10"
+          id="enter-massage"
         ></textarea>
+        <label for="enter-massage" class="visually-hidden">Enter massage</label>
         <p class="work-together-errorMessage">the field must be filled</p>
         <button class="work-together-sumbit" type="submit">SEND MESSAGE</button>
       </form>
