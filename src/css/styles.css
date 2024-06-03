@@ -5,6 +5,7 @@
   |============================
 */
 
+@import 'node_modules/modern-normalize/modern-normalize.css';
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -17,32 +18,3 @@
 @import url('./work-together.css');
 @import url('./footer.css');
 @import url('./base.css');
-
-/* Так робити зображення 
-    <picture>
-      <source
-        srcset="./img/desktop.webp 1x, ./img/desktop-2x.webp 2x"
-        media="(min-width: 1280px)" type="image/webp"
-      />
-      <source
-        srcset="./img/desktop.jpg 1x, ./img/desktop-2x.jpg 2x"
-        media="(min-width: 1280px)" type="image/jpg"
-      />
-      <source
-        srcset="./img/tablet.webp 1x, ./img/tablet-2x.webp 2x"
-        media="(min-width: 768px)" type="image/webp"
-      />
-      <source
-        srcset="./img/tablet.jpg 1x, ./img/tablet-2x.jpg 2x"
-        media="(min-width: 768px)" type="image/jpg"
-      />
-      <source
-        srcset="./img/mobil.webp 1x, ./img/mobil-2x.webp 2x"
-        media="(max-width: 767px)" type="image/webp"
-      />
-      <source
-        srcset="./img/mobil.jpg 1x, ./img/mobil-2x.jpg 2x"
-        media="(max-width: 767px)" type="image/jpg"
-       />
-      <img src="./img/desktop.jpg" alt="picture" />
-    </picture> */
