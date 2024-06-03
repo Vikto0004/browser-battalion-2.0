@@ -1,115 +1,102 @@
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
 
 /* ========================== MOBILE STYLES ========================== */
 
 .tech-skills-section {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .tech-skills-box {
-    display: flex;
-    padding: 32px 0px;
-    background-color: var(--light-accent);
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    width: 100vw;
+  display: flex;
+  background-color: var(--light-accent);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  width: 100vw;
 }
 
 .tech-skills-box-second {
-    display: flex;
-    padding: 32px 0px;
-    background-color: var(--light-grey);
-    transform: rotate(2deg);
-    z-index: 2;
+  display: flex;
+  background-color: var(--light-grey);
+  transform: rotate(2deg);
+  z-index: 2;
 }
 
 .tech-skils-running-line-list {
-    display: flex;
-    animation: runnung-line 4s var(--hover-effect) infinite;
+  display: flex;
+  animation: runnung-line 4s var(--hover-effect) infinite;
 }
 
 .tech-skils-running-line-list.type-two {
-    animation: runnung-line-type-two 4s var(--hover-effect) infinite;
-    color: var(--accent-green);
+  animation: runnung-line-type-two 4s var(--hover-effect) infinite;
+  color: var(--accent-green);
 }
 
 .tech-skils-running-line-item {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    padding: 32px 20px;
-    white-space: nowrap;
-    position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 32px 24px;
+  white-space: nowrap;
+  position: relative;
 }
 
 .tech-skils-running-line-item::after {
-    content: '';
-    position: absolute;
-    top: 45%;
-    border-radius: 20%;
-    left: -5px;
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent-green);
-
+  content: '';
+  position: absolute;
+  top: 45%;
+  border-radius: 20%;
+  left: -5px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-green);
 }
 
 .tech-skils-running-line-item.type-two::after {
-    background-color: var(--text);
+  background-color: var(--text);
 }
 
 @keyframes runnung-line {
-    from {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(-100%);
+  }
 
-    to {
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes runnung-line-type-two {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-100%);
-    }
+  to {
+    transform: translateX(-100%);
+  }
 }
-
 
 /* ========================== TABLET STYLES ========================== */
 
-@media screen and (min-width:768px) {
-
-    .tech-skills-box {
-        padding: 40px 0px;
-    }
-
-    .tech-skills-box-second {
-        padding: 40px 0px;
-    }
-
-    .tech-skils-running-line-item {
-        font-size: 36px;
-        line-height: 1.33333;
-        letter-spacing: 0.01em;
-    }
+@media screen and (min-width: 768px) {
+  .tech-skils-running-line-item {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+    padding: 40px 24px;
+  }
 }
