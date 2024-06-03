@@ -8,7 +8,7 @@ const faviconEl = document.querySelector('link[rel="icon"]');
 let isDarkThemeActive = false;
 const savedTheme = localStorage.getItem('dark-theme');
 
-if (savedTheme == 'true') {
+if (savedTheme) {
   isDarkThemeActive = true;
   document.body.classList.add('dark-theme');
   faviconEl.href = darkFavicon;
@@ -17,9 +17,13 @@ if (savedTheme == 'true') {
 
 checkboxEl.addEventListener('change', () => {
   bodyEl.classList.toggle('dark-theme');
-  if (isDarkThemeActive) faviconEl.href = lightFavicon;
-  else faviconEl.href = darkFavicon;
-
   isDarkThemeActive = !isDarkThemeActive;
-  localStorage.setItem('dark-theme', isDarkThemeActive);
+
+  if (isDarkThemeActive) {
+    localStorage.setItem('dark-theme', isDarkThemeActive);
+    console.log('test');
+  } else {
+    faviconEl.href = lightFavicon;
+    localStorage.removeItem('dark-theme');
+  }
 });
