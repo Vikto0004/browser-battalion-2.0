@@ -21,7 +21,7 @@ checkboxEl.addEventListener('change', () => {
 
   if (isDarkThemeActive) {
     localStorage.setItem('dark-theme', isDarkThemeActive);
-    console.log('test');
+    faviconEl.href = darkFavicon;
   } else {
     faviconEl.href = lightFavicon;
     localStorage.removeItem('dark-theme');
