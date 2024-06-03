@@ -34,6 +34,9 @@
 }
 
 .scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
   border: none;
