@@ -220,8 +220,8 @@
     width: 336px;
     height: 260px;
     background-image: image-set(
-      url('/img/together/decor tabl.png') 1x,
-      url('/img/together/decor tabl2x.png') 2x
+      url('../img/together/decor tabl.png') 1x,
+      url('../img/together/decor tabl2x.png') 2x
     );
     background-repeat: no-repeat;
   }
@@ -266,8 +266,8 @@
     width: 526px;
     height: 408px;
     background-image: image-set(
-      url('/img/together/decor lapt.png') 1x,
-      url('/img/together/decor lapt2x.png') 2x
+      url('../img/together/decor lapt.png') 1x,
+      url('../img/together/decor lapt2x.png') 2x
     );
   }
   .work-together-text {
