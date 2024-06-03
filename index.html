@@ -20,7 +20,12 @@
     <header class="header">
   <div class="container header-container">
     <p class="header-logo">Lloyd<span>Jefferson.</span></p>
-    <input type="checkbox" class="header-theme-checkbox theme-checkbox" />
+    <input
+      type="checkbox"
+      class="header-theme-checkbox theme-checkbox"
+      id="change-theme"
+    />
+    <label for="change-theme" class="visually-hidden">Change theme</label>
     <nav class="header-navigation">
       <ul class="header-list">
         <li class="header-item">
@@ -34,23 +39,23 @@
         </li>
       </ul>
       <button type="button" class="open-menu-btn">
+        <span class="visually-hidden">Open menu</span>
         <svg class="icon-open-menu" width="32" height="32">
           <use href="/browser-battalion-2.0/assets/sprite-e1d3e66b.svg#icon-burger"></use>
         </svg>
       </button>
     </nav>
   </div>
-
   <div class="mob-menu-container">
     <nav class="mob-menu-navigation">
       <a class="header-logo" href="./">Lloyd<span>Jefferson.</span></a>
       <button type="button" class="close-menu-btn">
+        <span class="visually-hidden">Close menu</span>
         <svg width="32" height="32" class="icon-close-btn">
           <use href="/browser-battalion-2.0/assets/sprite-e1d3e66b.svg#icon-close"></use>
         </svg>
       </button>
     </nav>
-    <!-- <div class="list-wrap"> -->
     <ul class="mob-menu-list">
       <li class="mob-menu-item">
         <a href="#about" class="link-hover">About me</a>
@@ -62,7 +67,6 @@
         <a href="#contacts" class="link-hover">Contacts</a>
       </li>
     </ul>
-    <!-- </div> -->
   </div>
 </header>
 
@@ -597,7 +601,9 @@
           type="email"
           placeholder="Your email*"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          id="enter-email"
         />
+        <label for="enter-email" class="visually-hidden">Enter email</label>
         <svg class="work-together-success" width="14" height="14">
           <use href="/browser-battalion-2.0/assets/sprite-e1d3e66b.svg#icon-ep_success-filled"></use>
         </svg>
@@ -607,7 +613,9 @@
           name="Message"
           placeholder="Message"
           minlength="10"
+          id="enter-massage"
         ></textarea>
+        <label for="enter-massage" class="visually-hidden">Enter massage</label>
         <p class="work-together-errorMessage">the field must be filled</p>
         <button class="work-together-sumbit" type="submit">SEND MESSAGE</button>
       </form>
