@@ -17,7 +17,7 @@ close.addEventListener('click', () => {
   backdrop.classList.remove('is-open');
 });
 
-window.addEventListener('keydown', function (e) {
+window.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     backdrop.classList.remove('is-open');
   }
