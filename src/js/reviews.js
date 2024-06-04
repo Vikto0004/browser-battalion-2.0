@@ -3,6 +3,15 @@ import 'swiper/css';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import lozad from 'lozad';
+
+const observer = lozad('.lozad', {
+  loaded: function (el) {
+    el.classList.add('fade-in');
+  },
+});
+
+observer.observe();
 
 // Function: show notification
 const showNotification = msg => {
@@ -88,8 +97,8 @@ const renderReviews = async () => {
                 <p class="review-card-text">${review}</p>
                 <div class="review-card-author">
                     <img
-                        class="review-card-author-avatar"
-                        src="${avatar_url}"
+                        class="review-card-author-avatar lozad"
+                        data-src="${avatar_url}"
                         alt="review author photo"
                         width="40"
                         height="40"
@@ -102,6 +111,7 @@ const renderReviews = async () => {
       .join('');
     // Add HTML to slider  wrapper
     sliderWrapper.insertAdjacentHTML('afterbegin', markup);
+    observer.observe();
   } catch (error) {
     sliderWrapper.insertAdjacentHTML(
       'afterbegin',
