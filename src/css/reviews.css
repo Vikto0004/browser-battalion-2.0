@@ -9,9 +9,8 @@
   height: 100%;
   position: relative;
 }
-.swiper-wrapper.is-reviews {
+.is-reviews {
   height: auto !important;
-  align-items: stretch !important;
 }
 .reviews-review-card {
   border-radius: 16px;
@@ -21,9 +20,11 @@
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;
+  gap: 24px;
+  height: 296px !important;
 }
 .review-card-text {
-  margin-bottom: 24px;
+  overflow: auto;
 }
 .review-card-author {
   display: flex;
@@ -67,6 +68,12 @@
 }
 .swiper-button-disabled {
   opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-review-card {
+    height: 224px !important;
+  }
 }
 
 @media screen and (min-width: 1280px) {

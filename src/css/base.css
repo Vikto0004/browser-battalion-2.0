@@ -29,6 +29,7 @@ html {
   transition: color 0.4s var(--hover-effect);
 }
 
+.link-hover:focus,
 .link-hover:hover {
   color: var(--accent-green);
 }

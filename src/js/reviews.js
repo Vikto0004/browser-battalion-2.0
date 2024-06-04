@@ -53,7 +53,6 @@ slides based on response data from server.
 ***/
 // Create Swiper instance
 const swiper = new Swiper('#reviews-slider', {
-  autoHeight: true,
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
