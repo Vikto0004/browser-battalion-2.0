@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function () {
   // Split text into spans
-  let typeSplit = new SplitType('[text-split]', {
+  let typeSplit = new SplitType('.text-split', {
     types: 'words, chars',
     tagName: 'span',
   });
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document
-    .querySelectorAll('[letters-fade-in-random]')
+    .querySelectorAll('.letters-fade-in-random')
     .forEach(function (element, index) {
       let tl = gsap.timeline({ paused: true });
       tl.from(element.querySelectorAll('.char'), {
@@ -44,5 +44,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
   // Avoid flash of unstyled content
-  gsap.set('[text-split]', { opacity: 1 });
+  gsap.set('.text-split', { opacity: 1 });
 });

@@ -79,8 +79,9 @@ const sliderWrapper = document.querySelector('.swiper-wrapper.is-reviews');
 Step 3: Using data fetched from server 
 create a mockup of HTML, and render it as a li element
 ***/
-fetchReviews()
-  .then(reviews => {
+const renderReviews = async () => {
+  try {
+    const reviews = await fetchReviews();
     const markup = reviews
       .map(({ author, avatar_url, review }) => {
         return `
@@ -102,11 +103,12 @@ fetchReviews()
       .join('');
     // Add HTML to slider  wrapper
     sliderWrapper.insertAdjacentHTML('afterbegin', markup);
-  })
-  .catch(error => {
+  } catch (error) {
     sliderWrapper.insertAdjacentHTML(
       'afterbegin',
       `<p class="reviews-error-text">Not found</p>`
     );
     showNotification(error.message);
-  });
+  }
+};
+renderReviews();
