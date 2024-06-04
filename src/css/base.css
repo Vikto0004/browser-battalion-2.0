@@ -81,3 +81,7 @@ html {
   transform: translateX(0);
   display: flex;
 }
+
+.word {
+  white-space: nowrap;
+}

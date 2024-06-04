@@ -19,6 +19,7 @@
     "axios": "^1.7.2",
     "gsap": "^3.12.5",
     "izitoast": "^1.4.0",
+    "lozad": "^1.16.0",
     "modern-normalize": "^2.0.0",
     "split-type": "^0.3.4",
     "swiper": "^11.1.3",
