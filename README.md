@@ -5,6 +5,7 @@
 This repository houses the outcome of our collaborative work on the team
 project at [GoIT Academy](https://goit.global/ua/). Together, we've crafted a professional
 personal website for Lloyd Jefferson, a fictional talented full-stack developer.
+
 ![Screenshot](./src/img/preview.png)
 
 # About the Project
