@@ -6,7 +6,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import lozad from 'lozad';
 
 const observer = lozad('.lozad', {
-  loaded: function (el) {
+  loaded: el => {
     el.classList.add('fade-in');
   },
 });
