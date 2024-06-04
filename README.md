@@ -2,8 +2,8 @@
 
 ## Developer's Personal Website
 
-This repository houses the outcome of our collaborative work on the diploma
-project at GoIT web development school. Together, we've crafted a professional
+This repository houses the outcome of our collaborative work on the team
+project at [GoIT Academy](https://goit.global/ua/). Together, we've crafted a professional
 personal website for Lloyd Jefferson, a fictional talented full-stack developer.
 ![Screenshot](./src/img/preview.png)
 
@@ -73,7 +73,7 @@ This project is the result of our talented team's collaborative efforts:
 # Our Experience at GoIT
 
 This project represents a significant milestone in our journey at
-[GoIT ](https://goit.global/ua/). It served as a practical application of our
+[GoIT](https://goit.global/ua/). It served as a practical application of our
 learning, allowing us to not only reinforce our technical skills but also to
 experience real-world web development challenges:
 
