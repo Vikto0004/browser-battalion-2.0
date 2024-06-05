@@ -107,7 +107,8 @@
 
   transition: background-color 0.3s var(--hover-effect);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--gray-visit-hover);
   }
 }
@@ -138,7 +139,8 @@
 
   transition: color 0.2s var(--hover-effect);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--accent-green);
   }
 
