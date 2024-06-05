@@ -1,4 +1,5 @@
 'use strict';
+
 import projects from './projects-api';
 import spriteUrl from '/img/sprite.svg';
 

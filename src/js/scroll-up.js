@@ -1,3 +1,5 @@
+'use strict';
+
 const elScrollBtn = document.querySelector('.scroll-btn ');
 
 let lastScrollTop = 0;

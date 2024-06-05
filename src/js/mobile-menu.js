@@ -1,3 +1,5 @@
+'use strict';
+
 const openMenu = () => {
   document.querySelector('.mob-menu-container').classList.add('is-open');
   document.body.style.overflow = 'hidden';

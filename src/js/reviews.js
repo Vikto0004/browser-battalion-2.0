@@ -1,3 +1,5 @@
+'use strict';
+
 import Swiper from 'swiper/bundle';
 import 'swiper/css';
 import axios from 'axios';

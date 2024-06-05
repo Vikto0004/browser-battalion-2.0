@@ -1,3 +1,5 @@
+'use strict';
+
 import lightFavicon from '/public/light-favicon.svg';
 import darkFavicon from '/public/dark-favicon.svg';
 
