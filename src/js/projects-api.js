@@ -1,3 +1,5 @@
+'use strict';
+
 import powerWebp1x from '/img/projects/webp/power.webp';
 import powerWebp2x from '/img/projects/webp/power-2x.webp';
 import powerJpg1x from '/img/projects/jpg/power-min.jpg';
