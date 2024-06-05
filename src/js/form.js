@@ -2,6 +2,7 @@
 
 import axios from 'axios';
 import iziToast from 'izitoast';
+import { elScrollBtn } from './scroll-up';
 
 const form = document.querySelector('.work-together-form');
 const input = document.querySelector('.work-together-input');
@@ -15,17 +16,20 @@ const loader = document.querySelector('.work-together-loader');
 
 close.addEventListener('click', () => {
   backdrop.classList.remove('is-open');
+  document.body.style.overflow = 'auto';
 });
 
 window.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     backdrop.classList.remove('is-open');
+    document.body.style.overflow = 'auto';
   }
 });
 
 backdrop.addEventListener('click', e => {
   if (e.target === e.currentTarget) {
     backdrop.classList.remove('is-open');
+    document.body.style.overflow = 'auto';
   }
 });
 
@@ -68,6 +72,8 @@ form.addEventListener('submit', e => {
       .then(res => {
         loader.classList.add('is-hide');
         backdrop.classList.add('is-open');
+        elScrollBtn.classList.remove('is-active-scroll');
+        document.body.style.overflow = 'hidden';
 
         const title = document.querySelector('.work-together-modal-title');
         const text = document.querySelector('.work-together-modal-text');
