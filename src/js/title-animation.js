@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', e => {
   // Split text into spans
   let typeSplit = new SplitType('.text-split', {
     types: 'words, chars',
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Link timelines to scroll position
-  function createScrollTrigger(triggerElement, timeline) {
+  const createScrollTrigger = (triggerElement, timeline) => {
     // Reset tl when scroll out of view past bottom of screen
     ScrollTrigger.create({
       trigger: triggerElement,
@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
       start: 'top 90%',
       onEnter: () => timeline.play(),
     });
-  }
+  };
 
   document
     .querySelectorAll('.letters-fade-in-random')
-    .forEach(function (element, index) {
+    .forEach((element, index) => {
       let tl = gsap.timeline({ paused: true });
       tl.from(element.querySelectorAll('.char'), {
         opacity: 0,

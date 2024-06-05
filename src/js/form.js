@@ -19,7 +19,7 @@ close.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 });
 
-window.addEventListener('keydown', function (e) {
+window.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     backdrop.classList.remove('is-open');
     document.body.style.overflow = 'auto';

@@ -3,8 +3,8 @@ export const elScrollBtn = document.querySelector('.scroll-btn ');
 let lastScrollTop = 0;
 export let switchScroll = true;
 
-window.addEventListener('scroll', () => {
-  let currentScrollTop = window.pageYOffset;
+window.addEventListener('scroll', e => {
+  let currentScrollTop = window.scrollY;
 
   if (currentScrollTop < lastScrollTop && switchScroll) {
     elScrollBtn.classList.add('is-active-scroll');
