@@ -50,6 +50,8 @@
   color: var(--text);
   transition: all 0.3s ease;
   resize: none;
+  max-width: 100%;
+  width: 100%;
 }
 .work-together-input:hover,
 .work-together-message:hover {
