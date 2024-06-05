@@ -149,6 +149,10 @@
     padding: 32px 0;
   }
 
+  .header-logo {
+    font-size: 32px;
+  }
+
   .header-list {
     display: flex;
     gap: 40px;
